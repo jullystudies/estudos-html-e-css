@@ -1,39 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #09090A;
-    color: white;
-    font-family: 'Inter', sans-serif;
+  background-color: #09090a;
+  color: white;
+  font-family: "Inter", sans-serif;
 
-    height: 100vh;
+  height: 100vh;
+}
+
+body * {
 }
 
 header {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 48px;
+  margin: 0;
 }
 
 header button {
-    background-color: #09090A;
-    color: white;
-    font-weight: 600;
-    font-family: 'Inter', sans-serif;
+  background-color: #09090a;
+  color: white;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 125%;
 
-    width: 216px;
-    height: 52px;
+  width: 216px;
+  height: 52px;
+  padding: 16px 24px;
 
-    border: 1px solid #8B5CF6;
-    border-radius: 8px;
-    
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
 }
 
 main {
-    border:1px solid red;
+}
+
+form {
+  display: flex;
+
+  padding: 0 48px;
+}
+
+.habits {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.habit {
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.days {
+  display: flex;
+  gap: 48px;
+  margin-left: 32px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day div {
+  margin-bottom: 8px;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #a1a1aa;
+}
+
+input {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 64px;
+  height: 64px;
+
+  border: 2px solid #a78bfa;
+  border-radius: 8px;
+
+  background: #18181b;
+}
+
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #a78bfa;
+  border-radius: 8px;
 }
