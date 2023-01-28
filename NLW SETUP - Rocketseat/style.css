@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: #23020A;
+  background-color: #23020a;
   color: white;
   font-family: "Inter", sans-serif;
 
@@ -30,11 +30,11 @@ header {
 
   position: fixed;
   width: 100%;
-  background-color: #23020A;
+  background-color: #23020a;
 }
 
 header button {
-  background-color: #23020A;
+  background-color: #23020a;
   color: white;
   font-weight: 600;
   font-family: "Inter", sans-serif;
@@ -43,7 +43,7 @@ header button {
 
   padding: 16px 24px;
 
-  border: 1px solid #EF4444;
+  border: 1px solid #ef4444;
   border-radius: 8px;
 
   display: flex;
@@ -109,15 +109,15 @@ input {
   width: 64px;
   height: 64px;
 
-  border: 2px solid #7F1D1D;
+  border: 2px solid #7f1d1d;
   border-radius: 8px;
 
   background: #310a12;
 }
 
 input:checked {
-  background: #F87171;
-  border: 2px solid #7F1D1D;
+  background: #f87171;
+  border: 2px solid #7f1d1d;
   border-radius: 8px;
 }
 
