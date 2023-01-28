@@ -1,65 +1,98 @@
 @charset "UTF-8";
 
-* {
-    margin: 0px;
-    padding: 0px;
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap");
+
+:root {
+  --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+  --fonte2: "Passion One", cursive;
+  --fonte3: "Sriracha", cursive;
 }
 
-html, body {
-    min-height: 100vh;
-    background-color: darkgrey;
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  min-height: 100vh;
+  background-color: darkgrey;
+  font-family: var(--fonte1);
 }
 
 header {
-    background-color: black;
-    color: white;
-    text-align: center;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: var(--fonte2);
 }
 
 header > h1 {
-    padding-top: 50px;
-    font-variant: small-caps;
+  padding-top: 50px;
+  font-variant: small-caps;
+  font-size: 6vw;
 }
 
 header > p {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  line-height: 2em;
+  padding-left: 50px;
+  font-family: var(--fonte3);
+  font-size: 1.5em;
+}
+
+section p {
+  padding-bottom: 2em;
+}
+
+section#img01 {
+  background-image: url(../imagens/background001.jpg);
+  background-position: right center;
+}
+
+section#img02 {
+  background-image: url(../imagens/background002.jpg);
+  background-position: right center;
 }
 
 section.normal {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 section.imagem {
-    background-color: rgb(56, 56, 56);
-    color: white;
+  background-color: rgb(56, 56, 56);
+  color: white;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.653);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.233);
-    width: 400px;
+  background-color: rgba(0, 0, 0, 0.448);
+  display: inline-block;
+  padding: 10px;
+  text-shadow: 1px 1px 0px black;
 }
 
 footer {
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 10px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px;
 }
